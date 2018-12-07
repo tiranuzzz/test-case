@@ -37,7 +37,8 @@ sub email_validation {
 my @valid_emails   = ('mail@example.com',        'Name <mail@example.com>',        '"Another Name" <mail@example.com>',
                       'mail+ext@example.com',    'Name <mail+ext@example.com>',    '"Another Name" <mail+ext@example.com>',
                       '"l o g i n"@example.com', 'Name <"l o g i n"@example.com>', '"Another Name" <"l o g i n"@example.com>',
-                      '"login"@example.com',     'Name <"login"@example.com>',     '"Another Name" <"login"@example.com>');
+                      '"login"@example.com',     'Name <"login"@example.com>',     '"Another Name" <"login"@example.com>',
+                      'best-mail@example.com',   'Name <ma-il@example.com>',       'andrew-mail+ext@example.com');
 
 my @invalid_emails = ('ma il@example.com',                  'mail @example.com', 
                       'mail@ example.com',                  'mail@exa mple.com', 
